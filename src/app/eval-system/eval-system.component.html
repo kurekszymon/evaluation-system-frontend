@@ -1,0 +1,17 @@
+<ng-container *ngIf="{ references: references$ | async } as props">
+  <ng-container *ngIf="!props.references?.length; else fetchedReferences">
+    <krk-file-upload
+      [requiredFileType]="'application/pdf'"
+      (uploadedFilePath)="onUploadedFilePath($event)"
+    ></krk-file-upload>
+    <button (click)="processFile(filePath)" [disabled]="!filePath">
+      Process file
+    </button>
+  </ng-container>
+
+  <ng-template #fetchedReferences>
+    <div (click)="resetReferences()">Go back!</div>
+
+    <krk-references-list [references]="props.references"></krk-references-list>
+  </ng-template>
+</ng-container>

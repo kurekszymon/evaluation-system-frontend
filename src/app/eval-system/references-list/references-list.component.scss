@@ -1,0 +1,11 @@
+.references-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 720px;
+  max-height: 50vh;
+
+  .references__reference {
+    margin: 0.75vh 0;
+  }
+}
