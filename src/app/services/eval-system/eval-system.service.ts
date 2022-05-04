@@ -5,9 +5,9 @@ import { map, Observable } from 'rxjs';
 import {
   processFileUrl,
   uploadFileUrl,
-} from 'src/app/shared/configs/eval-system/endpoints';
+} from '../../shared/configs/eval-system/endpoints';
 
-import { Reference } from 'src/app/shared/interfaces/backend-response.interface';
+import { Reference } from '../../shared/interfaces/backend-response.interface';
 
 @Injectable({
   providedIn: 'root',

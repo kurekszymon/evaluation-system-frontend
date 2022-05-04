@@ -8,7 +8,7 @@ import {
   Reference,
 } from '../shared/interfaces/backend-response.interface';
 @Component({
-  selector: 'krk-eval-system',
+  selector: 'app-eval-system',
   templateUrl: './eval-system.component.html',
   styleUrls: ['./eval-system.component.scss'],
 })
