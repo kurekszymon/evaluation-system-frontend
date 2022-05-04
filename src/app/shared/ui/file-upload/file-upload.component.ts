@@ -1,7 +1,7 @@
 import { HttpEventType, HttpResponse } from '@angular/common/http';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { finalize, Subscription, tap } from 'rxjs';
-import { EvalSystemService } from 'src/app/services/eval-system/eval-system.service';
+import { EvalSystemService } from '../../../services/eval-system/eval-system.service';
 import {
   BackendResponse,
   FileUploadResponse,

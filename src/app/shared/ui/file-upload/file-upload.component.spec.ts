@@ -1,3 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { MatIconModule } from '@angular/material/icon';
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FileUploadComponent } from './file-upload.component';
@@ -8,9 +11,9 @@ describe('FileUploadComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FileUploadComponent ]
-    })
-    .compileComponents();
+      declarations: [FileUploadComponent],
+      imports: [HttpClientTestingModule, MatIconModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {

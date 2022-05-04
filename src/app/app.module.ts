@@ -35,7 +35,7 @@ import { ReferencesListComponent } from './eval-system/references-list/reference
     MatProgressBarModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

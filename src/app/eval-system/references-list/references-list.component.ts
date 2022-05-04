@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Reference } from 'src/app/shared/interfaces/backend-response.interface';
 
 @Component({
-  selector: 'krk-references-list',
+  selector: 'app-references-list',
   templateUrl: './references-list.component.html',
   styleUrls: ['./references-list.component.scss'],
 })
